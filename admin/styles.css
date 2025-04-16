@@ -1,0 +1,129 @@
+/* Match layout like main client details page */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.top-nav .nav-btn {
+    margin-left: 10px;
+    padding: 8px 12px;
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    float: left;
+}
+
+.menu-items li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: #34495e;
+    font-weight: bold;
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    margin-left: 220px;
+    background-color: #f9f9f9;
+}
+
+.client-bio-section,
+.client-stats {
+    margin-bottom: 30px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.client-bio {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.bio-left, .bio-right {
+    width: 48%;
+}
+
+.bio-left div, .bio-right div {
+    margin-bottom: 10px;
+}
+
+.financial-summary {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.summary-card {
+    flex: 1;
+    padding: 15px;
+    background-color: #eaf2f8;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Savings History format should remain untouched */
+.savings-history-card {
+    margin-bottom: 30px;
+}
+
+.savings-history-list li {
+    margin-bottom: 8px;
+}
+
+/* Loan history styling */
+.history-list {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.history-item:last-child {
+    border-bottom: none;
+}
+
+.footer {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
